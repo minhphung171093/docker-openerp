@@ -51,7 +51,7 @@ RUN echo openerp:vagrant | chpasswd
 RUN cd / && \
     git clone https://github.com/minhphung171093/GreenERP_V7.git && \
     chown -R openerp: GreenERP_V7 && \
-    ln -s GreenERP_V7/ openerp-server
+    ln -s openerp7/ openerp-server
 
 ADD startup.sh /startup.sh
 
